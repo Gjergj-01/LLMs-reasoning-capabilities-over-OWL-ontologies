@@ -11,7 +11,8 @@ def retrieve_result(text, task):
     text = text.strip()
 
     if task == "query_answering":
-        groups = re.split('Q', text)
+        text = text[text.find("Q1:"):]
+        groups = re.split('Q\d', text)
 
         results = {}
         i = 1
@@ -22,7 +23,7 @@ def retrieve_result(text, task):
 
             reasoning_steps, answer = elem.split('---')
             key = 'Q' + str(i)
-            results[key] = {'reasoning_steps': reasoning_steps.split(':')[1].strip(), 'answer': answer.strip()}
+            results[key] = {'reasoning_steps': reasoning_steps.split(':', 1)[1].strip(), 'answer': answer.strip()}
 
             i += 1
 
@@ -36,7 +37,8 @@ def retrieve_result(text, task):
 
 
     elif task == "instance_checking":
-        groups = re.split('A', text)
+        text = text[text.find("A1:"):]
+        groups = re.split('A\d', text)
 
         results = {}
         i = 1
@@ -46,7 +48,7 @@ def retrieve_result(text, task):
 
             reasoning_steps, answer = elem.split('---')
             key = 'A' + str(i)
-            results[key] = {'reasoning_steps': reasoning_steps.split(':')[1].strip(), 'answer': answer.strip()}
+            results[key] = {'reasoning_steps': reasoning_steps.split(':', 1)[1].strip(), 'answer': answer.strip()}
 
             i += 1
         
@@ -69,8 +71,6 @@ def getLLM_feedback():
     ## Read the knowledge base
     with open("tasks/knowledge_base.json") as f:
         file = json.load(f)
-    
-    knowledge_base = file['KB']
 
     ## Read the json files containing the instructions for the LLM
 
@@ -89,18 +89,22 @@ def getLLM_feedback():
 
         task_instructions = ''
         output_format = ''
+        knowledge_base = file['KB']
 
         if task == "query_answering": 
             task_instructions = query_answering_task['query_answering_task']
             output_format = query_answering_task['query_answering_format']
+            knowledge_base = file['KB']
 
         elif task == "inconsistency_checking":
             task_instructions = inconsistency_checking_task['inconsistency_checking_task']
             output_format = inconsistency_checking_task['inconsistency_checking_format']
+            knowledge_base = inconsistency_checking_task['KB']
 
         else:
             task_instructions = instance_checking_task['instance_checking_task']
             output_format = instance_checking_task['instance_checking_format']
+            knowledge_base = file['KB']
 
 
         response = client.models.generate_content(
@@ -131,13 +135,19 @@ def getLLM_feedback():
         with open("results/gemini_raw_feedback.jsonl", "a") as f:
             f.write(json.dumps(feedback, indent=2) + '\n')
 
-        organized_output = retrieve_result(response.text, task)
 
-        # save the cleaned output
-        path = "results/gemini_" + task + ".json"
+        try:
+            organized_output = retrieve_result(response.text, task)
+            # save the cleaned output
+            path = "results/gemini_" + task + ".json"
 
-        with open(path, 'w') as f:
-            json.dump(organized_output, f, indent=4)
+            with open(path, 'w') as f:
+                json.dump(organized_output, f, indent=4)
+
+        except:
+            print(f'Could not format the output for task: {task}')
+
+    return
 
 
 
