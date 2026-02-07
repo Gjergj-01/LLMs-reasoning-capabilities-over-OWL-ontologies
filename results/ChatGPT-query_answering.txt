@@ -1,0 +1,56 @@
+## Response:
+Q1:
+
+
+We look for individuals that satisfy Employee AND interviews VALUE Luca.
+
+The property hires is a subproperty of interviews, so if x hires y, then x interviews y.
+
+We have hires(Marco, Luca), therefore interviews(Marco, Luca).
+
+The domain of interviews is Recruiter, and Recruiter ⊑ Employee, so Marco is an Employee.
+
+No other individual is stated or inferred to interview Luca.
+--- [Marco]
+
+
+Q2:
+
+
+All individuals explicitly asserted or inferred to be Employees:
+Francesca and Matteo are asserted as Recruiters → Recruiter ⊑ Employee.
+
+From Q1, Marco is inferred to be a Recruiter → Employee.
+
+manages(Giulia, PosteItaliane) and manages(LarryPage, Google); domain of manages is CompanyManager, and CompanyManager ⊑ Manager ⊑ Employee → Giulia and LarryPage are Employees.
+
+headOf(Alessio, CyberSecurityTeam); domain of headOf is TeamManager, and TeamManager ⊑ Manager ⊑ Employee → Alessio is an Employee.
+
+composedBy(CyberSecurityTeam, Emanuela) and composedBy(CyberSecurityTeam, Fabio); range of composedBy is Employee → Emanuela and Fabio are Employees.
+--- [Francesca, Matteo, Marco, Giulia, LarryPage, Alessio, Emanuela, Fabio]
+
+
+Q3:
+
+
+We look for Employee AND interviews VALUE Ann AND hires SOME.
+
+interviews(Matteo, Ann) is given, so Matteo satisfies interviews VALUE Ann.
+
+However, Matteo has no hires assertions.
+
+Marco satisfies hires SOME (hires Luca), but there is no statement or inference that Marco interviews Ann.
+
+No individual satisfies both conditions simultaneously.
+--- [∅]
+
+
+Q4:
+
+
+We look for individuals that satisfy worksIn VALUE Google.
+
+Given worksIn(Marco, Google).
+
+No other worksIn relation with Google is stated or inferred.
+--- [Marco]

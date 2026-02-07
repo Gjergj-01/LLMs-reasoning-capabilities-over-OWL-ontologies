@@ -1,0 +1,18 @@
+{
+    "A1": {
+        "reasoning_steps": "The knowledge base states that :LarryPage :manages :Google. The domain of the :manages property is :CompanyManager, so :LarryPage is a :CompanyManager. Since :CompanyManager is a subclass of :Manager and :Manager is a subclass of :Employee, :LarryPage is inferred to be an :Employee. The :worksIn property has :Employee as its domain and :Company as its range. While it is stated that every :Employee must work in something (ObjectSomeValuesFrom( :worksIn owl:Thing)), there is no axiom or sub-property relationship (e.g., SubObjectPropertyOf( :manages :worksIn)) that implies that a manager of a company also \"works in\" that same company in the technical sense of the :worksIn property. Therefore, the assertion does not hold.",
+        "answer": "NO"
+    },
+    "A2": {
+        "reasoning_steps": ":Matteo is a :Recruiter, and since :Recruiter is a subclass of :Employee, :Matteo is an :Employee. As an :Employee, he must work in some company, but the knowledge base does not provide any specific :worksIn assertion for :Matteo. The company :Unicredit is associated with the :Lawyer and :AIEngineer positions, while :Matteo is the referent for the :SoftwareEngineer position. There is no information linking :Matteo to :Unicredit.",
+        "answer": "NO"
+    },
+    "A3": {
+        "reasoning_steps": "It is asserted that :Giulia :manages :PosteItaliane. The property :manages has the domain :CompanyManager, which means :Giulia is a :CompanyManager. According to the class hierarchy, :CompanyManager is a subclass of :Manager, and :Manager is a subclass of :Employee. Therefore, by transitivity of the subclass relationship, :Giulia is an :Employee.",
+        "answer": "YES"
+    },
+    "A4": {
+        "reasoning_steps": "The knowledge base contains an explicit assertion that the referent for the :AIEngineer job is :Marco (ObjectPropertyAssertion( :hasReferent :AIEngineer :Marco)). There is no assertion or reasoning chain that links :AIEngineer to :Matteo; in fact, :Matteo is explicitly identified as the referent for the :SoftwareEngineer job.",
+        "answer": "NO"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Q1": {
+        "reasoning_steps": "To find the individuals that belong to the class expression `Employee AND interviews VALUE Luca`, we look for individuals who are both employees and have an `interviews` relationship with `Luca`. First, we identify that `Marco` is a `Recruiter` because he is the range of the `hasReferent` property in the assertion `hasReferent(:DataEngineer, :Marco)`, and `Recruiter` is a subclass of `Employee`. Next, we look at the `interviews` property. The ontology contains the assertion `hires(:Marco, :Luca)`. Since `hires` is defined as a sub-property of `interviews` (`SubObjectPropertyOf(:hires :interviews)`), we can infer that `interviews(:Marco, :Luca)` is true. No other employee is asserted or inferred to interview `Luca`. Thus, Marco is the only individual that satisfies both conditions.",
+        "answer": "[Marco]"
+    },
+    "Q2": {
+        "reasoning_steps": "To return all employees, we identify all individuals that are members of the `Employee` class or its subclasses (`Recruiter`, `Manager`, `TeamManager`, `CompanyManager`). \n1. **Francesca** and **Matteo** are explicitly asserted as `Recruiter`.\n2. **Marco** is inferred to be a `Recruiter` because he is the range of the `hasReferent` property in `hasReferent(:AIEngineer, :Marco)`.\n3. **Alessio** is inferred to be a `TeamManager` because he is the domain of the `headOf` property in `headOf(:Alessio, :CyberSecurityTeam)`.\n4. **Giulia** and **LarryPage** are inferred to be `CompanyManager` individuals because they are the domain of the `manages` property in `manages(:Giulia, :PosteItaliane)` and `manages(:LarryPage, :Google)`.\n5. **Emanuela** and **Fabio** are inferred to be `Employee` individuals because they are the range of the `composedBy` property in `composedBy(:CyberSecurityTeam, :Emanuela)` and `composedBy(:CyberSecurityTeam, :Fabio)`.\nAll these classes (`Recruiter`, `TeamManager`, `CompanyManager`) are subclasses of `Employee`.",
+        "answer": "[Alessio, Emanuela, Fabio, Francesca, Giulia, LarryPage, Marco, Matteo]"
+    },
+    "Q3": {
+        "reasoning_steps": "To satisfy the query `Employee AND interviews VALUE Ann and hires SOME`, an individual must be an employee, must interview `Ann`, and must hire at least one person (`hires SOME owl:Thing`). From the knowledge base, `Matteo` is an `Employee` (Recruiter) and is explicitly asserted to interview `Ann` (`interviews(:Matteo, :Ann)`). However, there is no assertion that `Matteo` hires anyone. On the other hand, `Marco` hires `Luca` and `Francesca` hires `Elena`, making them satisfy the `hires SOME` condition, but neither of them is asserted or inferred to interview `Ann`. Therefore, no individual in the knowledge base satisfies all three parts of the query.",
+        "answer": "[None]"
+    },
+    "Q4": {
+        "reasoning_steps": "To find individuals for the query `worksIn VALUE Google`, we look for individuals who have a `worksIn` relationship with the individual `Google`. The knowledge base contains the explicit assertion `ObjectPropertyAssertion(:worksIn :Marco :Google)`. Although `LarryPage` is identified as the manager of Google (`manages(:LarryPage, :Google)`), the ontology does not contain any axioms (such as sub-property relations or property chains) that would allow us to infer that a manager of a company also \"works in\" that company. Thus, Marco is the only individual identified by this query.",
+        "answer": "[Marco]"
+    }
+}

@@ -1,0 +1,431 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement/"
+     xml:base="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:StaffManagement="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement">
+        <rdfs:comment>Company staff management</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#applies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#applies">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Candidate"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Job"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#composedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#composedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Employee"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#hasReferent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#hasReferent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Job"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Recruiter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#headOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#headOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#TeamManager"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#hires -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#hires">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#interviews"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#interviews -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#interviews">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Recruiter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Candidate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#manages -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#manages">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#CompanyManager"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#opensPosition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#opensPosition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Job"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#worksIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#worksIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Employee"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Candidate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Candidate">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#applies"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Company"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#CompanyManager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#CompanyManager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Manager"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#TeamManager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Employee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Employee">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#worksIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Every Employee must work in a company</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Job -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Job"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Employee"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Recruiter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Recruiter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Recruiter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Team">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#composedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Every team is composed by at least one Employee</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#TeamManager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#TeamManager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Manager"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#AIEngineer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#AIEngineer">
+        <StaffManagement:hasReferent rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Marco"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Alessio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Alessio">
+        <StaffManagement:headOf rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#CyberSecurityTeam"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Ann -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Ann">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Candidate"/>
+        <StaffManagement:applies rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#AIEngineer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Bob -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Bob">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Candidate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#CloudEngineer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#CloudEngineer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#CyberSecurityTeam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#CyberSecurityTeam">
+        <StaffManagement:composedBy rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Emanuela"/>
+        <StaffManagement:composedBy rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Fabio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#DataEngineer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#DataEngineer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Job"/>
+        <StaffManagement:hasReferent rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Marco"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Elena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Elena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Candidate"/>
+        <StaffManagement:applies rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Lawyer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Emanuela -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Emanuela"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Fabio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Fabio"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Francesca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Francesca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Recruiter"/>
+        <StaffManagement:hires rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Elena"/>
+        <StaffManagement:interviews rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Bob"/>
+        <StaffManagement:worksIn rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Unicredit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Giulia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Giulia">
+        <StaffManagement:manages rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#PosteItaliane"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Google -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Google">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Company"/>
+        <StaffManagement:opensPosition rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#DataEngineer"/>
+        <StaffManagement:opensPosition rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#JavaDeveloper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#JavaDeveloper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#JavaDeveloper"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#LarryPage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#LarryPage">
+        <StaffManagement:manages rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Google"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Lawyer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Lawyer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Job"/>
+        <StaffManagement:hasReferent rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Francesca"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Luca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Luca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Candidate"/>
+        <StaffManagement:applies rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#CloudEngineer"/>
+        <StaffManagement:applies rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#DataEngineer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Marco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Marco">
+        <StaffManagement:hires rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Luca"/>
+        <StaffManagement:worksIn rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Google"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Matteo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Matteo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Recruiter"/>
+        <StaffManagement:interviews rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Ann"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#PosteItaliane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#PosteItaliane"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#SoftwareEngineer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#SoftwareEngineer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Job"/>
+        <StaffManagement:hasReferent rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Matteo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Unicredit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Unicredit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Company"/>
+        <StaffManagement:opensPosition rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#AIEngineer"/>
+        <StaffManagement:opensPosition rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Lawyer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Candidate"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Company"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Employee"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Job"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/StaffManagement#Team"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

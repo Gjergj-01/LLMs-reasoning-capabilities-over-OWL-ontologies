@@ -1,0 +1,4 @@
+{
+    "instance_checking_task": "\nGiven the knowledge base that is provided, your task is to tell whether the following assertions hold:\nA1: ObjectPropertyAssertion( :worksIn :LarryPage :Google)\nA2: ObjectPropertyAssertion( :worksIn :Matteo :Unicredit)\nA3: ClassAssertion( :Employee :Giulia)\nA4: ObjectPropertyAssertion( :hasReferent :AIEngineer :Matteo)\n\nshowing for each of them in detail the reasoning steps that led to the answers (which must be YES or NO).\n",
+    "instance_checking_format": "\nStructure your response as follows:\nA1: (your reasoning steps) --- [answer]\nA2: (your reasoning steps) --- [answer]\nA3: (your reasoning steps) --- [answer]\nA4: (your reasoning steps) --- [answer]\nNotice that the sequence \"---\" must be unique (and must always be present) in the response for each, as it will be used as separator for the answer.\n"
+}

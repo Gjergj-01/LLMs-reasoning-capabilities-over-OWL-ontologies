@@ -1,0 +1,7 @@
+Q1: The reasoning correctly identifies that `hires` is a subproperty of `interviews`, meaning Marco interviews Luca. It then correctly uses the domain axiom of `interviews` (Recruiter) and the class hierarchy (Recruiter ⊑ Employee) to conclude Marco satisfies the query. --- [SCORE] 5
+
+Q2: The reasoning is exhaustive and systematically identifies every employee through both direct assertions (Recruiters) and inferences based on property domains (manages, headOf) and ranges (composedBy). --- [SCORE] 5
+
+Q3: The reasoning correctly evaluates the conjunction by checking the two potential candidates (Matteo and Marco). It correctly identifies that while Matteo satisfies the interview condition and Marco satisfies the "hires SOME" condition, no single individual satisfies both. --- [SCORE] 5
+
+Q4: The reasoning correctly identifies the result based on a direct object property assertion in the knowledge base. --- [SCORE] 5

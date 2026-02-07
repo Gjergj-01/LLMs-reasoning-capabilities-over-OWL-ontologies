@@ -1,0 +1,4 @@
+{
+    "query_answering_task": "\nGiven the knowledge base that is provided, you are asked to answer the following queries (expressed in Manchester OWL syntax):\n- Q1: Employee AND interviews VALUE Luca\n- Q2: Employee (In natural language: Return all the employees)\n- Q3: Employee AND interviwes VALUE Ann and hires SOME \n- Q4: worksIn VALUE Google\n\nshowing for each of them in detail the reasoning steps that led to the answers.\n",
+    "query_answering_format": "\nStructure your response as follows: \nQ1: (your reasoning steps) --- [answer].\nQ2: (your reasoning steps) --- [answer].\nQ3: (ypur reasoning steps) --- [answer].\nQ4: (ypur reasoning steps) --- [answer].\nNotice that the sequence \"---\" must be unique (and must always be present) in the response of each query, as it will be used as separator for the answer.\n"
+}
