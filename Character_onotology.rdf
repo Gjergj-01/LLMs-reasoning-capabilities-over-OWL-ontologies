@@ -1,0 +1,647 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31/"
+     xml:base="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-31="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31">
+        <rdfs:comment>Character ontology</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P1 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P1">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#A"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#F"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P10 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P10">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#A"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#K"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P11 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P11">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#F"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#L"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P12 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P12">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#I"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#M"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P13 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P13">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#M"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#N"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P2">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#C"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#E"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P3 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P3">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#E"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#A"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P4 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P4">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#D"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#F"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P5 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P5">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#F"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#G"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P6 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P6">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#G"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#H"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P7 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P7">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#I"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#G"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P8 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P8">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#H"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#I"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P9 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P9">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#P8"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#A -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#A"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#B -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#B">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#A"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#H"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#C -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#C">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#B"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#D"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#D -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#D">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#B"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#E -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#E"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#F -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#F"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#G -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#G"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#H -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#H">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#A"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#I -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#I"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#K -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#K"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#L -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#L"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#M -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#M"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#N -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#N"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#a1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#a1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#A"/>
+        <untitled-ontology-31:P1 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#f2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#a2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#a2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#A"/>
+        <untitled-ontology-31:P1 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#w"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#a3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#a3"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#b1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#b1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#B"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#C"/>
+        <untitled-ontology-31:P2 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#e1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#c1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#c1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#C"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#ca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#ca">
+        <untitled-ontology-31:P7 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#j2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#d1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#d1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#D"/>
+        <untitled-ontology-31:P4 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#o"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#d2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#d2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#e1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#e1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#E"/>
+        <untitled-ontology-31:P3 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#a2"/>
+        <untitled-ontology-31:P3 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#y1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#e2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#e2">
+        <untitled-ontology-31:P3 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#y"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#f1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#f1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#F"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#f2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#f2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#F"/>
+        <untitled-ontology-31:P5 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#g2"/>
+        <untitled-ontology-31:P5 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#j2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#g1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#g1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#G"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#g2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#g2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#G"/>
+        <untitled-ontology-31:P6 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#q"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#h1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#h1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#H"/>
+        <untitled-ontology-31:P8 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#a3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#h2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#h2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#H"/>
+        <untitled-ontology-31:P9 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#i2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#i1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#i1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#I"/>
+        <untitled-ontology-31:P7 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#g1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#i2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#i2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#I"/>
+        <untitled-ontology-31:P12 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#m2"/>
+        <untitled-ontology-31:P12 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#n2"/>
+        <untitled-ontology-31:P7 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#j"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#j -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#j">
+        <untitled-ontology-31:P6 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#r1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#j1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#j1">
+        <untitled-ontology-31:P6 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#h2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#j2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#j2"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#k1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#k1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#K"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#k2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#k2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#K"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#k3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#k3">
+        <untitled-ontology-31:P10 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#k1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#l1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#l1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#L"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#m1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#m1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#m2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#m2"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#m3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#m3">
+        <untitled-ontology-31:P12 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#m1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#n1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#n1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#N"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#n2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#n2">
+        <untitled-ontology-31:P13 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#n1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#o -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#o"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#q -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#q">
+        <untitled-ontology-31:P8 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#ca"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#r1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#r1">
+        <untitled-ontology-31:P1 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#z2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#r2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#r2">
+        <untitled-ontology-31:P8 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#i1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#r3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#r3">
+        <untitled-ontology-31:P9 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#w2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#s1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#s1">
+        <untitled-ontology-31:P4 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#f1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#s2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#s2">
+        <untitled-ontology-31:P4 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#f2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#w -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#w">
+        <untitled-ontology-31:P11 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#z3"/>
+        <untitled-ontology-31:P5 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#j1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#w2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#w2"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#y -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#y"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#y1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#y1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#z -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#z">
+        <untitled-ontology-31:P1 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#w"/>
+        <untitled-ontology-31:P10 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#k2"/>
+        <untitled-ontology-31:P2 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#e2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#z2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#z2">
+        <untitled-ontology-31:P11 rdf:resource="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#l1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#z3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#z3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#A"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#E"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#F"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#G"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#I"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#K"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#L"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#M"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gjergj/ontologies/2026/1/untitled-ontology-31#N"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
