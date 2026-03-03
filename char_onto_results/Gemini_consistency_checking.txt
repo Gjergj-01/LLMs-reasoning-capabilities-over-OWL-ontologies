@@ -1,0 +1,32 @@
+To determine whether the knowledge base is consistent, we must analyze the class hierarchy, disjointness constraints, property domains and ranges, and individual assertions.
+
+### 1. Class Hierarchy and Disjointness
+The KB defines several classes and a hierarchy:
+- `C ⊆ B ⊆ A`
+- `D ⊆ B ⊆ A`
+- `H ⊆ A`
+The classes **A, K, E, F, L, G, I, M, and N** are all pairwise disjoint. This means any individual belonging to one of these classes cannot belong to any other in the set. Since B, C, D, and H are subclasses of A, any individual belonging to any of these is also an instance of A and must not belong to K, E, F, L, G, I, M, or N.
+
+### 2. Property Analysis
+The properties have the following domain and range restrictions:
+- **P1: A → F**, **P2: C → E**, **P3: E → A**, **P4: D → F**, **P5: F → G**, **P6: G → H**, **P7: I → G**, **P8: H → I**, **P9: H → I** (since P9 ⊆ P8), **P10: A → K**, **P11: F → L**, **P12: I → M**, **P13: M → N**.
+
+### 3. Individual and Property Assertions
+We trace the class memberships inferred from property assertions:
+- **z:** From `P1(z, w)`, `P2(z, e2)`, and `P10(z, k2)`, `z` must be in Domain(P1)=A, Domain(P2)=C, and Domain(P10)=A. Since `C ⊆ A`, `z` belongs to both C and A, which is consistent.
+- **w:** From `P1(a2, w)`, `P5(w, j1)`, and `P11(w, z3)`, `w` must be in Range(P1)=F, Domain(P5)=F, and Domain(P11)=F. Thus, `w` is an instance of F.
+- **r1:** From `P1(r1, z2)` and `P6(j, r1)`, `r1` is in Domain(P1)=A and Range(P6)=H. Since `H ⊆ A`, this is consistent.
+- **h2:** From `P6(j1, h2)` and `P9(h2, i2)`, `h2` is in Range(P6)=H and Domain(P9)=H. Thus, `h2` is in H (and A).
+- **i2:** From `P9(h2, i2)`, `P7(i2, j)`, and `P12(i2, n2)`, `i2` is in Range(P9)=I, Domain(P7)=I, and Domain(P12)=I. Thus, `i2` is in I.
+- **n2:** From `P12(i2, n2)` and `P13(n2, n1)`, `n2` is in Range(P12)=M and Domain(P13)=M. Thus, `n2` is in M.
+- **q:** From `P6(g2, q)` and `P8(q, ca)`, `q` is in Range(P6)=H and Domain(P8)=H. Thus, `q` is in H (and A).
+- **ca:** From `P8(q, ca)` and `P7(ca, j2)`, `ca` is in Range(P8)=I and Domain(P7)=I. Thus, `ca` is in I.
+- **j:** From `P6(j, r1)` and `P7(i2, j)`, `j` is in Domain(P6)=G and Range(P7)=G. Thus, `j` is in G.
+- **j2:** From `P5(f2, j2)` and `P7(ca, j2)`, `j2` is in Range(P5)=G and Range(P7)=G. Thus, `j2` is in G.
+
+All other individuals (a1, a2, a3, b1, c1, d1, d2, e1, e2, f1, f2, g1, g2, h1, k1, k2, k3, l1, m1, m2, m3, n1, o, r2, r3, s1, s2, w2, y, y1, z2, z3) are also assigned classes based on assertions and property definitions, but none are forced into two disjoint classes.
+
+### 4. Conclusion
+The inferences show that all individuals belong to exactly one of the disjoint classes (or its subclasses), and no contradictions arise between class assertions, subclass axioms, or property domain/range constraints.
+
+--- YES
