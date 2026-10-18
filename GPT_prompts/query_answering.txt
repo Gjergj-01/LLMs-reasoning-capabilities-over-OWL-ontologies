@@ -133,10 +133,8 @@ ObjectPropertyAssertion( :manages :LarryPage :Google)
             ### The task instructions:
                 
 Given the knowledge base that is provided, you are asked to answer the following queries (expressed in Manchester OWL syntax):
-- Q1: Employee AND interviews VALUE Luca
-- Q2: Employee (In natural language: Return all the employees)
-- Q3: Employee AND interviwes VALUE Ann and hires SOME 
-- Q4: worksIn VALUE Google
+- Q1: Employee AND worksIn VALUE Unicredit and interviews VALUE Bob AND hires some
+- Q2: Job (In natural language: Return all the Jobs)
 
 showing for each of them in detail the reasoning steps that led to the answers.
  
@@ -146,8 +144,6 @@ showing for each of them in detail the reasoning steps that led to the answers.
 Structure your response as follows: 
 Q1: (your reasoning steps) --- [answer].
 Q2: (your reasoning steps) --- [answer].
-Q3: (ypur reasoning steps) --- [answer].
-Q4: (ypur reasoning steps) --- [answer].
 Notice that the sequence "---" must be unique (and must always be present) in the response of each query, as it will be used as separator for the answer.
 
 
